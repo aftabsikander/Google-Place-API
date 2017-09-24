@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="@dimen/horizontal_page_margin"
+    tools:context="aftabsikander.demo.placeapi.MainActivity">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/autocomplete_hint"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/clear_text" />
+
+
+    <TextView
+        android:id="@+id/place_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/place_attribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:paddingTop="@dimen/vertical_page_margin"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+</LinearLayout>
